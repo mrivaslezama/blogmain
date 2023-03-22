@@ -16,13 +16,17 @@ const permalink = Astro.site.href;
 
     <div class="hero-image-container">
       <picture>
-        <source srcset="/assets/churrasco3.jpg" media="(min-width: 600px)">
-        <img class="hero-image" alt="Illustration of person reading a book" src="/assets/churrasco3.jpg" width="550" height="466">
+        <source srcset="/assets/logo.png" media="(min-width: 600px)">
+        <img class="hero-image" alt="La Tia Romy -Restaurante-" src="/assets/logo.png" width="550" height="466">
       </picture>
       
     </div>
+    <!-- <div class="Ellipse_Bottom"></div> -->
+
+    </div>
   </div>
 </BaseLayout>
+
 
 <style>
   .home-container {
@@ -69,6 +73,7 @@ const permalink = Astro.site.href;
     width: 100%;
     max-width: 550px;
     margin-bottom: 1em;
+  
   }
 
   @media (max-width: 1200px) {
@@ -78,6 +83,7 @@ const permalink = Astro.site.href;
 
     .hero-image {
       max-width: 400px;
+      z-index: 1;
     }
   }
 
@@ -92,4 +98,21 @@ const permalink = Astro.site.href;
       text-align: center;
     }
   }
+
+  .Ellipse_Bottom {
+  border-width: 3.571px;
+  border-color: rgb(0, 0, 0);
+  border-style: solid;
+  border-radius: 50%;
+  background-color: rgb(7, 7, 7);
+  position: end;
+  left: 440px;
+  top: 2230px;
+  width: 550.858px;
+  height: 340.858px;
+  z-index: 1;
+  margin: 0 auto;
+}
+  
+
 </style>
