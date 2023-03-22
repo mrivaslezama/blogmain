@@ -7,7 +7,7 @@ import netlify from "@astrojs/netlify/functions";
 // https://astro.build/config
 export default defineConfig({
   site: 'https://astro-blog-template.netlify.app',
-  integrations: [mdx(), svelte()],
+  integrations: [mdx()],
   markdown: {
     shikiConfig: {
       theme: 'nord'
@@ -19,3 +19,4 @@ export default defineConfig({
   },
   adapter: netlify()
 });
+
